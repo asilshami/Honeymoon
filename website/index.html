@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeymoon in Italy and Switzerland</title>
+    <style>
+        .image-grid img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+        nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f2f1f1;
+            color: #333;
+        }
+
+        h1, h2, p, a {
+            font-family: 'Playfair Display', serif;
+        }
+
+        header {
+            background: #f2dcd5;
+            color: #000000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #F4EEE4;
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #060000;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #000000;
+            text-align: center;
+        }
+
+        .image-grid {
+            display: flex;
+            gap: 0; /* No spacing between images */
+            margin: 0;
+            padding: 0;
+            width: 100%; /* Full width of the screen */
+            overflow: hidden;
+        }
+
+        .image-grid img {
+            width: 33.33%; /* Each image takes up 1/3 of the screen width */
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .map-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        .text {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 500px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .image-grid {
+                flex-direction: column; /* Stack images vertically on smaller screens */
+            }
+            .image-grid img {
+                width: 100%; /* Each image spans the full screen width */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Honeymoon in Italy 🇮🇹 and Switzerland 🇨🇭</h1>
+        <div style="text-align: center; display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <a href="https://www.linkedin.com/in/asil-shami-75b3b82a7" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+            </a>
+            <p style="margin: 0;"><a href="mailto:asilshami9@example.com" style="text-decoration: none; color: #0077b5;">asilshami9@gmail.com</a></p>
+            <p style="margin: 0;"><a href="tel:0524631379" style="text-decoration: none; color: #0077b5;">+0524631379</a></p>
+        </div>
+    </header>
+    <nav>
+        <a href="#italy">North Italy</a>
+        <a href="#switzerland">Switzerland</a>
+    </nav>
+    <section id="italy">
+        <h2>North Italy: Ortisei and Cortina d'Ampezzo</h2>
+        <div class="image-grid">
+            <img src="images/ortisei1.jpg" alt="Ortisei">
+            <img src="images/ortisei2.jpg" alt="Ortisei">
+            <img src="images/ortisei3.jpg" alt="Ortisei">
+        </div>
+        <div class="text">
+            <p>
+                Our stay in <strong>Ortisei</strong> was a dream come true. This charming alpine village offered stunning views of the Dolomites, vibrant markets, and cozy lodges. The peaceful atmosphere was perfect for unwinding.
+            </p>
+        </div>
+        <div class="image-grid">
+            <img src="images/cortina1.jpg" alt="Cortina">
+            <img src="images/cortina2.jpg" alt="Cortina">
+            <img src="images/cortina3.jpg" alt="Cortina">
+        </div>
+        <div class="text">
+            <p>
+                Known as the "Queen of the Dolomites", <strong>Cortina d'Ampezzo</strong> dazzled us with its majestic peaks and luxurious charm. We loved exploring its trails and enjoying authentic Italian cuisine.
+            </p>
+        </div>
+    </section>
+    <section id="switzerland">
+        <h2>Switzerland: Grindelwald, Interlaken, Lauterbrunnen, and Brienz</h2>
+        <div class="image-grid">
+            <img src="images/grind1.jpg" alt="Grindelwald">
+            <img src="images/grind2.jpg" alt="Grindelwald">
+            <img src="images/grind3.jpg" alt="Grindelwald">
+        </div>
+        <div class="text">
+            <p>
+                <strong>Grindelwald</strong> felt like stepping into a fairytale. Nestled in the shadow of the Eiger, this village offered breathtaking views, exciting cable car rides, and cozy Swiss chalets.
+            </p>
+        </div>
+        <div class="image-grid">
+            <img src="images/interlaken1.jpg" alt="Interlaken">
+            <img src="images/interlaken2.jpg" alt="Interlaken">
+            <img src="images/interlaken3.jpg" alt="Interlaken">
+        </div>
+        <div class="text">
+            <p>
+                <strong>Interlaken</strong>, situated between Lake Thun and Lake Brienz, was a perfect blend of adventure and relaxation. The turquoise lakes and surrounding peaks created an unforgettable backdrop.
+            </p>
+        </div>
+        <div class="image-grid">
+            <img src="images/lauter1.jpg" alt="Lauterbrunnen">
+            <img src="images/lauter2.jpg" alt="Lauterbrunnen">
+            <img src="images/lauter3.jpg" alt="Lauterbrunnen">
+        </div>
+        <div class="text">
+            <p>
+                <strong>Lauterbrunnen</strong>, with its stunning valley of 72 waterfalls, left us speechless. Walking amidst the cliffs and hearing the thundering cascades was an unforgettable experience.
+            </p>
+        </div>
+        <div class="image-grid">
+            <img src="images/brienz1.jpg" alt="Brienz">
+            <img src="images/brienz2.jpg" alt="Brienz">
+            <img src="images/brienz3.jpg" alt="Brienz">
+        </div>
+        <div class="text">
+            <p>
+                <strong>Brienz</strong>, a picturesque village on the shores of Lake Brienz, enchanted us with its turquoise waters and charming woodcarving traditions. It was a serene retreat amidst Switzerland's natural beauty.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Honeymoon in Italy and Switzerland</p>
+    </footer>
+</body>
+</html>
